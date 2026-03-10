@@ -5,7 +5,7 @@ import Header from './components/Header'
 import SequenciaResultados from './components/SequenciaResultados'
 import GatilhosDinamicos from './components/GatilhosDinamicos'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 const WS_URL = 'ws://localhost:8000/ws'
 
 function tocarSom(tipo = 'sinal') {
