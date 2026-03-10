@@ -5,10 +5,9 @@ import Header from './components/Header'
 import SequenciaResultados from './components/SequenciaResultados'
 import GatilhosDinamicos from './components/GatilhosDinamicos'
 
-// API URL - Detecta automaticamente
-const API_URL = window.location.hostname === 'localhost' 
-  ? 'http://localhost:8000' 
-  : 'https://bacbo-ai-signals.onrender.com'
+// PRODUÇÃO - URL FIXA DO BACKEND RENDER
+const API_URL = 'https://bacbo-ai-signals.onrender.com'
+console.log('🔗 API_URL configurada:', API_URL)
 const WS_URL = 'ws://localhost:8000/ws'
 
 function tocarSom(tipo = 'sinal') {
