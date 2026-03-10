@@ -7,8 +7,9 @@ import GatilhosDinamicos from './components/GatilhosDinamicos'
 
 // PRODUÇÃO - URL FIXA DO BACKEND RENDER
 const API_URL = 'https://bacbo-ai-signals.onrender.com'
+const WS_URL = 'wss://bacbo-ai-signals.onrender.com/ws'
 console.log('🔗 API_URL configurada:', API_URL)
-const WS_URL = 'ws://localhost:8000/ws'
+console.log('🔗 WS_URL configurada:', WS_URL)
 
 function tocarSom(tipo = 'sinal') {
   try {
