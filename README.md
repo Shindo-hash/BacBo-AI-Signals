@@ -40,8 +40,8 @@ cd backend
 # Criar arquivo .env com suas chaves:
 GEMINI_API_KEY=sua_chave_gemini_aqui
 GROQ_API_KEY=sua_chave_groq_aqui
-APP_USUARIO=Shindo144
-APP_SENHA=Shindo144.
+APP_USUARIO=
+APP_SENHA=
 
 # Instalar dependências
 pip install -r requirements.txt
