@@ -32,7 +32,7 @@ function Header({ conectado, thresholdMin, setThresholdMin, onReiniciarSessao })
 
             {/* Download Extensão */}
             <a 
-              href="https://drive.google.com/file/d/1QXYAXjag9-dg1Xbxt7HPo9FqrSD9LIa9/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1i0GGXBJS859qBNnG57qbLqXKgbIOdpzn/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-gray-700 hover:bg-gray-600 text-gray-300 text-xs font-medium px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5">
