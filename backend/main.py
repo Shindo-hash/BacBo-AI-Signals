@@ -15,12 +15,8 @@ import asyncio
 
 app = FastAPI()
 
-# CORS - URLs permitidas
-origins = [
-    "https://bac-bo-ai-signals-n2dk.vercel.app",  # Frontend em produção
-    "http://localhost:5173",  # Frontend local
-    "http://localhost:3000"   # Frontend local alternativo
-]
+# CORS - Aceita TODAS URLs (temporário para deploy)
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,

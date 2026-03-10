@@ -5,7 +5,10 @@ import Header from './components/Header'
 import SequenciaResultados from './components/SequenciaResultados'
 import GatilhosDinamicos from './components/GatilhosDinamicos'
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+// API URL - Detecta automaticamente
+const API_URL = window.location.hostname === 'localhost' 
+  ? 'http://localhost:8000' 
+  : 'https://bacbo-ai-signals.onrender.com'
 const WS_URL = 'ws://localhost:8000/ws'
 
 function tocarSom(tipo = 'sinal') {
