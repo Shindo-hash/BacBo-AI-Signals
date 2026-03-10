@@ -11,7 +11,9 @@ export default function Login({ onLogin }) {
     setErro('')
     setCarregando(true)
     try {
-      const res = await fetch('http://localhost:8000/api/login', {
+      // URL do backend em produção
+      const API_URL = 'https://bacbo-ai-signals.onrender.com'
+      const res = await fetch(`${API_URL}/api/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ usuario, senha })
@@ -98,7 +100,7 @@ export default function Login({ onLogin }) {
           <div className="text-center">
             <p className="text-purple-400 font-bold text-sm flex items-center justify-center gap-2">
               <span>🛠️</span>
-              <span>Desenvolvido por Fernando R.</span>
+              <span>Desenvolvido por Fernando</span>
             </p>
             <p className="text-gray-400 text-xs mt-1">Araguaína, Tocantins - Brasil</p>
           </div>
@@ -126,7 +128,7 @@ export default function Login({ onLogin }) {
 
         {/* Footer */}
         <p className="text-center text-gray-600 text-xs">
-          © 2026 BacBo AI Signals - Sistema Privado
+          © 2025 BacBo AI Signals - Sistema Privado
         </p>
 
       </div>
