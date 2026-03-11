@@ -17,8 +17,8 @@ class GroqClient:
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json"
         }
-        # Modelo Llama 3.3 70B (NOVO, substitui 3.1)
-        self.model = "llama-3.3-70b-versatile"
+        # Modelo Llama 3.1 8B Instant (RÁPIDO e econômico)
+        self.model = "llama-3.1-8b-instant"
     
     async def validar_gatilho(self, historico: List[dict], gatilho: Dict) -> Dict:
         """
